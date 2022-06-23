@@ -44,6 +44,7 @@ Now I can detect some small signs but there is a trade-off, while I can detect s
 
 The headlight of car is detected as a traffic sign from program which we can say that is false-positive. And also I would like to say that as I mentioned above there is two conditions in filter by area method and if sign detected with first condition the boundary is green and if sign detected with second condition the boundary is purple. Hence, we can see that trade off in this example.
 
+
 Final step of this program is that reading an image, then calling two different color detection methods after combining the returned masks send this combined mask to filter by area method.
 
 ![image](https://user-images.githubusercontent.com/73959073/175186804-38ca8eca-9f07-4cef-a207-77f02b804a56.png)
@@ -63,6 +64,7 @@ So, the final calculation is that:
 **Recall: 0,866**
 **F1-Score: 0.86599**
 
+[F1 Score.xlsx](https://github.com/MelihCan9/TrafficSign_Detection/files/8962821/F1.Score.xlsx)
 
 
 
