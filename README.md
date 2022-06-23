@@ -23,8 +23,7 @@ method to detect color in our original image but in this situation, I did not us
 to detect shapes by area. 
 
 The filtering by area method gets a parameter to get contours and filter by area. So, these masks will be the parameter of this method. In this method I used some built-in
-functions such as arclength, contourArea, approxPolyDP etc. Before explaining these methods, I also want to point out that I took this method in two phases too. While I 
-was using only one if condition, I realized I could not detect small signs in an image. So, I used two if conditions to handle that problem.
+functions such as arclength, contourArea, approxPolyDP etc. Before explaining these methods, I also want to point out that I took this method in two phases too. While I was using only one if condition, I realized I could not detect small signs in an image. So, I used two if conditions to handle that problem.
 
 To detect smaller signs the second if condition is runs. But there is a huge difference between these two conditions, in the second conditions I used a morphological 
 operation to make bigger that small signs. And of course, if I wanted to make bigger that contours there are two morphological operations, which are closing and dilation.
@@ -39,6 +38,9 @@ Difference between normal contour and dilated contour. With this method program 
 
 Now I can detect some small signs but there is a trade-off, while I can detect small signs there might be also more false positives. Finally, after these if conditions I used a method that is like recursive method. I initialized an another for loop which has same parameters with the first one, but the difference is before these loops that I mentioned above. After this method, the final phase is calling these detection methods to detect traffic signs.
 
+
+![image](https://user-images.githubusercontent.com/73959073/175186592-2c6051be-733f-4b59-8612-11ac4cf53d2b.png)
+The headlight of car is detected as a traffic sign from program which we can say that is false-positive. And also I would like to say that as I mentioned above there is two conditions in filter by area method and if sign detected with first condition the boundary is green and if sign detected with second condition the boundary is purple. Hence, we can see that trade off in this example.
 
 
 
