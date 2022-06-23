@@ -58,6 +58,7 @@ To calculate that F1 score we have to had %100 results. And we can get this resu
 
 And the formula of the F1 Score is: 2 x (precision x recall) / (precision + recall)
 So, the final calculation is that:
+
 **Precision: 0,866**
 **Recall: 0,866**
 **F1-Score: 0.86599**
