@@ -31,5 +31,9 @@ operation to make bigger that small signs. And of course, if I wanted to make bi
 I preferred to use dilation instead of closing because closing operations dilation is not enough to detect these small signs. So, I used dilation to make these contours to
 detection.
 
+![image](https://user-images.githubusercontent.com/73959073/175186371-1c523b57-fe32-4fc4-9fa9-08389b5949ab.png)
+
+![image](https://user-images.githubusercontent.com/73959073/175186390-a0dc5074-9704-4fb4-94fc-06b4a87109e9.png)
+
 
 
