@@ -34,6 +34,11 @@ detection.
 ![image](https://user-images.githubusercontent.com/73959073/175186371-1c523b57-fe32-4fc4-9fa9-08389b5949ab.png)
 
 ![image](https://user-images.githubusercontent.com/73959073/175186390-a0dc5074-9704-4fb4-94fc-06b4a87109e9.png)
+Difference between normal contour and dilated contour. With this method program can detect that small signs easily.
+
+
+Now I can detect some small signs but there is a trade-off, while I can detect small signs there might be also more false positives. Finally, after these if conditions I used a method that is like recursive method. I initialized an another for loop which has same parameters with the first one, but the difference is before these loops that I mentioned above. After this method, the final phase is calling these detection methods to detect traffic signs.
+
 
 
 
