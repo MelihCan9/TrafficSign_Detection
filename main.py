@@ -65,7 +65,7 @@ def area_filter(img):
                     cv2.rectangle(imgContour, (x, y), (x + w, y + h), (135, 65, 135), 2)
 
 
-img = cv2.imread('BIM472_Image01.jpg')
+img = cv2.imread('Resources/BIM472_Image01.jpg')
 
 imgContour = img.copy()
 red = red_detect(img)
