@@ -17,7 +17,7 @@ filtering by area can detect some small traffic signs which shape detection coul
 filtering by color in this program. In details,
 
 First step of this algorithm is calling 2 different color detection method. In these methods first steps is, changing the color model of the input image from BGR to HSV.
-Theninitializing lower and upper boundaries for color detection with respect of HSV ranges in OpenCV. While blue color detection using one boundary, the red color 
+Then initializing lower and upper boundaries for color detection with respect of HSV ranges in OpenCV. While blue color detection using one boundary, the red color 
 detection is using two different boundaries, because of OpenCV range. After initializing the boundaries, we are creating a mask. In color detection we usually use bitwise 
 method to detect color in our original image but in this situation, I did not use the bitwise method because my main purpose is not detecting colors. I used these masks 
 to detect shapes by area. 
@@ -33,6 +33,7 @@ detection.
 ![image](https://user-images.githubusercontent.com/73959073/175186371-1c523b57-fe32-4fc4-9fa9-08389b5949ab.png)
 
 ![image](https://user-images.githubusercontent.com/73959073/175186390-a0dc5074-9704-4fb4-94fc-06b4a87109e9.png)
+
 Difference between normal contour and dilated contour. With this method program can detect that small signs easily.
 
 
@@ -40,7 +41,9 @@ Now I can detect some small signs but there is a trade-off, while I can detect s
 
 
 ![image](https://user-images.githubusercontent.com/73959073/175186592-2c6051be-733f-4b59-8612-11ac4cf53d2b.png)
+
 The headlight of car is detected as a traffic sign from program which we can say that is false-positive. And also I would like to say that as I mentioned above there is two conditions in filter by area method and if sign detected with first condition the boundary is green and if sign detected with second condition the boundary is purple. Hence, we can see that trade off in this example.
 
+Final step of this program is that reading an image, then calling two different color detection methods after combining the returned masks send this combined mask to filter by area method.
 
 
