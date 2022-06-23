@@ -46,4 +46,22 @@ The headlight of car is detected as a traffic sign from program which we can say
 
 Final step of this program is that reading an image, then calling two different color detection methods after combining the returned masks send this combined mask to filter by area method.
 
+![image](https://user-images.githubusercontent.com/73959073/175186804-38ca8eca-9f07-4cef-a207-77f02b804a56.png)
+
+As an example. In this image we can say the two signs that in front is detected with bigger area condition (first condition) and the behind ones are detected with smaller area condition (second condition) which also use dilation morphological operation.
+
+### F1 SCORE AS A METRIC ERROR CALCULATION
+
+To understand the effectiveness of this program we can use F1 score calculation, which includes confusion matrix elements such as false-positive, true-negative etc.
+
+To calculate that F1 score we have to had %100 results. And we can get this result with manually detect these signs as human.
+
+And the formula of the F1 Score is: 2 x (precision x recall) / (precision + recall)
+So, the final calculation is that:
+**Precision: 0,866**
+**Recall: 0,866**
+**F1-Score: 0.86599**
+
+
+
 
